@@ -5,6 +5,7 @@ RUN apt install -y python3-dev gcc
 
 ADD requirements.txt requirements.txt
 RUN pip install -r requirements.txt
+RUN pip install Pillow==5.4.1
 
 COPY app app/
 
